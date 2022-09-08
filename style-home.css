@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* a cada 1rem será considera 10px */
+    font-size: 62.5%;
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    max-width: 950px;   
+}
+
+.image-container img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.text-info{
+    width: 100%;
+    text-align: center;
+}
+
+.text-info h1{
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+    display: inline-block;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: bold;
+    
+}
+
+.text-info p{
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilização do navigation radion-botton */
+.navigation-btn{
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.navigation-btn a{
+    display: inline-block;
+    border-radius: 100%;
+    border:1px solid;
+    padding: 2px;
+    width: 15px;
+    height: 15px;
+    text-decoration: none;
+    margin: 8px;
+}
+
+.navigation-btn .btn-active{
+    background-color: #92E3A9;
+    border: none;
+    width: 15px;
+    height: 15px;
+    
+}
+
+/* estilização do botões continue e SKip */
+.container-buttons{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 20vh;
+    max-width: 850px;
+    width: 85%;
+
+} 
+
+
+.container-buttons .btn-continue{
+    text-decoration: none;
+    font-family: 'Poppins', Courier, monospace;
+    font-size: 1.8rem;
+    text-align: center;
+    height: 46px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #92E3A9;
+    color: white;
+    font-weight: bold;
+    box-shadow: 1px 5px 7px 0 #A1C3FC;
+    display: flex;
+    width: 600px ;
+
+
+} 
+
+/* Estilização do botao quando o mouse passar por cima */
+.btn-continue:hover{
+    background-color: #38483c;
+    font-weight: bold;
+    transition: all 0.6s;
+
+}
+
+
+/* Estilização quando o botão for ativado */
+.btn-continue:active{
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+}
+
+
+.container-buttons .btn-skip{
+    font-family: 'Poppins', Courier, monospace;
+    margin-top:30px;
+    width: 20%;
+    text-decoration: none;
+    color: #92E3A9;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    
+}
+
+/* responsividade */
+/* 320px - 480px = mobile P M G*/
+
+@media (min-width : 320px) {
+    main{
+        padding: 50px;
+        width: 80%;
+        align-items: center;
+        font-size: 2rem;
+        
+    }
+
+    .container-buttons .btn-continue{
+        max-width: 185%;
+        font-size: 30px;
+    }
+
+    .container-buttons .btn-skip{
+        font-size: 30px;
+    }
+
+    .text-info p{
+        font-size: 25px;
+    }
+    .text-info h2{
+        font-size: 26px;
+    }
+
+    .image-container img{
+        max-height: 200%;
+        
+    }
+}
+
+@media (min-width:360) and (max-height:740px){
+    .image-container{
+        width: 200px;
+        height: 200px;
+    }
+
+}
+@media (min-width : 375px) {
+    main{
+        padding: 50px;
+        width: 80%;
+        align-items: center;
+        font-size: 2rem;
+        
+    }
+
+    .container-buttons .btn-continue{
+        max-width: 185%;
+        font-size: 30px;
+    }
+
+    .container-buttons .btn-skip{
+        font-size: 30px;
+    }
+
+    .text-info p{
+        font-size: 25px;
+    }
+    .text-info h2{
+        font-size: 26px;
+    }
+
+    .image-container img{
+        max-height: 200%;
+        
+    }
+}
+@media (min-width: 384px) and (max-width: 640px){
+    p{
+        width: 200px;
+        line-height: 30px;
+        
+    }
+
+    h2{
+        line-height: 30px;
+    }
+
+    img{
+        height: 180px;
+    }
+
+    .navigation-btn {
+        margin-top: 35px;
+        height: 35px;
+
+    }
+
+    .btn-skip{
+        width: 45px;
+        height: 44px;
+    
+        
+    }
+
+    .container-buttons{
+        max-height: 120px;
+    }
+}
+    
+
+
+
+
+@media (min-width : 425px) {
+    main{
+        padding: 50px;
+        width: 80%;
+        align-items: center;
+        font-size: 2rem;
+        
+    }
+
+    .container-buttons .btn-continue{
+        max-width: 185%;
+        font-size: 30px;
+    }
+
+    .container-buttons .btn-skip{
+        font-size: 30px;
+    }
+
+    .text-info p{
+        font-size: 25px;
+    }
+    .text-info h2{
+        font-size: 26px;
+    }
+
+    .image-container img{
+        max-height: 200%;
+        
+    }
+} 
+
+
+
+/* 480px - 768px = tablet */
+@media (min-width: 481px) {
+    .container-buttons .btn-continue{
+        font-size: 2.2rem;
+        max-width: 450px;
+    }
+
+    .container-buttons .btn-skip{
+        font-size: 2.3rem;
+    }
+
+
+}
+
+  /* 768px - 1024px = telas menores, laptops */
+@media (min-width: 768px) {
+
+}
+
+  /* 1024px - 1200px = desktop */
+@media (min-width: 1024px) {
+
+}
+
+  /* 1200 e + = telas maiores, tvs */
+@media (min-width: 1200px) {
+
+
+}
+
+
+
+
+
+
