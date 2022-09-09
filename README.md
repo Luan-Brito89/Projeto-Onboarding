@@ -28,9 +28,11 @@ index --> second-page --> three-page
 
 
 ## Style Guide
-Design design inside figma.
+Design screens inside figma.
 
 ### Guia de estilos
-Design do projeto dentro do figma.
+Telas do projeto dentro do figma.
+
+![Tela Onboarding ](https://user-images.githubusercontent.com/86250213/189251166-97e749fa-06c5-43ed-894c-c11d173a4629.png)
 
 
